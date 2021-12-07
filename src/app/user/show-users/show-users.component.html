@@ -1,0 +1,23 @@
+<p>show-users works!</p>
+<table class="table">
+    <thead>
+      <th>Full Name</th>
+      <th>UserName</th>
+      <th>Password</th>
+      <th>Mobile</th>
+      <th>UserType</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dataItem of UsersList">
+          <td>{{dataItem.fullName}}</td>
+          <td>{{dataItem.userName}}</td>
+          <td>{{dataItem.password}}</td>
+          <td>{{dataItem.mobile}}</td>
+          <td>{{dataItem.userType}}</td>
+          <td>
+            <button type="button" class="btn btn-light mr-1">Edit</button>
+            <button type="button" class="btn btn-light mr-1">Delete</button>
+          </td>
+        </tr>
+    </tbody>
+  </table>
